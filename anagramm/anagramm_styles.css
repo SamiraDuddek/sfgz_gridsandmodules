@@ -1,0 +1,58 @@
+*{
+  padding: 0px;
+  margin: 0px;
+
+}
+
+html{
+     background-color: #728071;
+     font-family: helvetica;
+}
+  
+  p{
+    color: #E3FFE3;
+    font-size: 6rem;
+  }
+
+  body{
+    transition: .2s ease; 
+    transition-property: color, background-color;
+
+    
+
+
+  }
+
+  .raster div{
+      
+       border-style: dotted;
+      border-color: #E3FFE3;
+    
+    }
+
+.raster {
+
+  display: grid;
+      grid-template-columns: repeat(3, 10vmin);
+      grid-template-rows: repeat(3, 10vmin);
+      grid-gap: 1em;
+      min-height: 100vh;
+
+
+      justify-content: center;
+      align-content: center;
+
+     justify-items: center;
+     align-items: center;
+      
+     font-size: 10vmin;
+     line-height: 1;
+     text-transform: uppercase;
+
+       border-style: dotted;
+     border-color: #E3FFE3;
+     
+
+  }
+
+  @media screen and (max-width: 48em){body{background-color: black;  }}
