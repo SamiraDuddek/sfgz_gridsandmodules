@@ -1,0 +1,76 @@
+body {
+            font-family: sans-serif;
+            background: #000000;
+        }
+
+p{ 
+
+color: white;
+font-size: 3vmin;
+}
+
+.raster div {
+            font-size: calc(100vh / 10);
+            line-height:100%;
+            color:white;
+            text-transform: uppercase;
+            position:relative;
+}
+
+.raster{
+      display: grid;
+       width: 100vw;
+       height: 100vh;
+       overflow:hidden;
+      border: 1px solid green;
+      grid-template-columns: 300px 300px 300px 300px;
+      grid-template-rows: 200px;
+
+      justify-content: center;
+      align-content: center;
+
+     justify-items: center;
+     align-items: center;
+      
+     /*font-size: 10vmin;*/
+     line-height: 1;
+     text-transform: uppercase;
+
+    }
+
+ .animation_1{
+ 	animation-name: erscheinen;
+ 	 animation-duration: 4s;
+ 	 animation-iteration-count: infinite;
+ 	 animation-direction: alternate;
+ }
+
+.animation_1:nth-child(1){
+  animation-delay:0s;
+}
+.animation_1:nth-child(2){
+  animation-delay:0.5s;
+}
+.animation_1:nth-child(3){
+  animation-delay:1s;
+}
+.animation_1:nth-child(4){
+  animation-delay:1.5s;
+}
+
+
+ @keyframes erscheinen{
+  100% {
+    font-size: 0;
+    opacity: 0;
+  }
+  10% {
+    font-size: 220%;
+    opacity: 1;
+  }
+  0% {
+    font-size: 200%;
+    opacity: 1;	
+  }
+}
+
