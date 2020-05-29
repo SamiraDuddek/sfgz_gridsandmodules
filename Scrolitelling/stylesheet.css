@@ -1,0 +1,41 @@
+html{
+	background-color: #023065;
+	font-family: 'Aktiv Grotesk Trial', sans-serif;
+}
+
+body {
+      /*max-width: 960px;*/
+      margin: auto;
+      display: grid;
+     grid-template-areas: "Text1" "Text2" "Text3" ;
+      grid-template-columns: 4fr 2fr;
+
+    }
+
+h2.white {
+	color: #ffffff;
+	font-size: calc(100vw / 12) ;
+}
+
+p {
+	color: #ffffff;
+	font-size: calc(100vw / 6) ;
+}
+
+.Text1 {
+      background: #004056;
+      color: #FFFFCB;
+      grid-area: Text1;
+    }
+
+  .Text2 {
+      background: #74bec7;
+      color: #FFFFCB;
+      grid-area: Text2;
+    }
+
+  .Text3 {
+      background: #004078;
+      color: #FFFFCB;
+      grid-area: Text3;
+    }
