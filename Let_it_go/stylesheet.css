@@ -19,7 +19,7 @@ h1{
 
 h1.go{
   font-family:'Mada';
-   font-weight: 400;
+   font-weight: 300;
   font-size: 55vw;
   color: #FFFFFF;
   text-align: center;
@@ -39,7 +39,7 @@ h1.gross{
 
 h2{
   font-family:'Mada';
-   font-weight: 400;
+   font-weight: 300;
   font-size: 24vw;
   color: #282828;
   letter-spacing: 0;
@@ -124,7 +124,7 @@ font-size: 1vw;
 span{
   font-family: 'Mada';
   font-weight: 300;
-  font-size: 3.125em;
+  font-size: 3.7vw;
   color: #282828;
   text-align: center;
   margin: 0px;
@@ -187,9 +187,11 @@ span{
 .howling{
   grid-column: 3/11;
   grid-row: 2/3;
-  align-self:center;
+  align-self:top;
   margin-right: auto; 
   margin-left: auto;
+  display: flex;
+  align-items: flex-end;
 }
 
 .howling2{
@@ -272,14 +274,14 @@ span{
 
 .storm{
   grid-column: 4/10;
-  grid-row: 2/3;
+  grid-row: 1/2;
   align-self:end;
 
 }
 
 .on{
   grid-column: 4/10;
-  grid-row: 3/4;
+  grid-row: 2/3;
   align-self:top;
  
 }
@@ -348,7 +350,7 @@ span{
 /*Around*/
 
 .aa{
-  grid-column: 1/2;
+  grid-column: 2/3;
   grid-row: 7/8;
 }
 .rr{
@@ -405,39 +407,55 @@ span{
 }
 .oooo{
   vertical-align: baseline;
+
 }
 .ooo .oooo:hover:nth-child(1) {
     font-size: 5em;
+      line-height: 65%;
 }
 .ooo .oooo:hover:nth-child(2) {
   font-size: 7em;
+    line-height: 65%;
 }
 .ooo .oooo:hover:nth-child(3) {
   font-size: 7.5em;
+  line-height: 65%;
 }
 .ooo .oooo:hover:nth-child(4) {
     font-size: 9em;
+    line-height: 65%;
 }
 .ooo .oooo:hover:nth-child(5) {
   font-size: 9.5em;
+  line-height: 65%;
 }
 .ooo .oooo:hover:nth-child(6) {
   font-size: 10em;
+  line-height: 65%;
 }
 .ooo .oooo:hover:nth-child(7) {
   font-size: 9.5em;
+  line-height: 65%;
 }
 .ooo .oooo:hover:nth-child(8) {
     font-size: 9em;
+    line-height: 65%;
 }
 .ooo .oooo:hover:nth-child(9) {
   font-size: 7.5em;
+  line-height: 65%;
 }
 .ooo .oooo:hover:nth-child(10) {
   font-size: 7em;
+  line-height: 65%;
 }
 .ooo .oooo:hover:nth-child(11) {
     font-size: 5em;
+    line-height: 65%;
+}
+.ooo .oooo:hover:nth-child(12) {
+    font-size: 5em;
+    line-height: 65%;
 }
 
 
@@ -482,6 +500,343 @@ span{
     opacity: 0%;
   }
 }
+
+
+/*Animation Around*/ 
+.around{
+  animation: animationFrame linear 6s;
+  animation-iteration-count: infinite;
+  transform-origin: 50% 50%;
+}
+
+@keyframes animationFrame{
+  0% {
+    transform:  translate(0px,0px)  ;
+  }
+  20% {
+    transform:  translate(1px,-50px)  ;
+  }
+  41% {
+    transform:  translate(-50px,-52px)  ;
+  }
+  60% {
+    transform:  translate(-51px,0px)  ;
+  }
+  80% {
+    transform:  translate(-1px,0px)  ;
+  }
+  100% {
+    transform:  translate(-1px,0px)  ;
+  }
+}
+
+.around2{
+  animation: animationFram linear 6s;
+  animation-iteration-count: infinite;
+  transform-origin: 50% 50%;
+}
+
+@keyframes animationFram{
+  0% {
+    transform:  translate(-1px,0px)  ;
+  }
+  20% {
+    transform:  translate(-1px,0px)  ;
+  }
+  41% {
+    transform:  translate(-51px,0px)  ;
+  }
+  60% {
+    transform:  translate(-50px,-52px)  ;
+  }
+  80% {
+    transform:  translate(1px,-50px);
+  }
+  100% {
+    transform:  translate(0px,0px)  ;
+  }
+}
+
+.grossaround{
+  animation: animationFrames linear 6s;
+  animation-iteration-count: infinite;
+  transform-origin: 50% 50%;
+}
+
+@keyframes animationFrames{
+  0% {
+    transform:  translate(58px,46px)  ;
+  }
+  21% {
+    transform:  translate(63px,-1px)  ;
+  }
+  40% {
+    transform:  translate(63px,-96px)  ;
+  }
+  60% {
+    transform:  translate(-103px,-96px)  ;
+  }
+  79% {
+    transform:  translate(-98px,46px)  ;
+  }
+  100% {
+    transform:  translate(53px,44px)  ;
+  }
+}
+
+.grossaround2{
+  animation: animation linear 6s;
+  animation-iteration-count: infinite;
+  transform-origin: 50% 50%;
+}
+
+@keyframes animation{
+  0% {
+    transform:  translate(53px,44px)   ;
+  }
+  21% {
+    transform:  translate(-98px,46px) ;
+  }
+  40% {
+    transform:  translate(-103px,-96px)  ;
+  }
+  60% {
+    transform:  translate(63px,-96px)  ;
+  }
+  79% {
+    transform:  translate(63px,-1px)  ;
+  }
+  100% {
+    transform:  translate(58px,46px)  ;
+  }
+}
+
+
+/*Animation anywayx*/ 
+.step1.checkview.isinview{
+  animation: anywayanimation1  linear 4s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  transform-origin: 50% 50%;
+}
+
+@keyframes anywayanimation1 {
+  0% {
+    opacity:1;
+  }
+  11% {
+    opacity:0.7;
+  }
+  100% {
+    opacity:0.7;
+  }
+}
+
+.step2.checkview.isinview{
+  animation: anywayanimation2  linear 4s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  transform-origin: 50% 50%;
+  animation-delay:0.5s;
+}
+
+@keyframes anywayanimation2 {
+  0% {
+    opacity:1;
+  }
+  11% {
+    opacity:0.5;
+  }
+  100% {
+    opacity:0.5;
+  }
+}
+.step3.checkview.isinview{
+  animation: anywayanimation3  linear 4s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  transform-origin: 50% 50%;
+    animation-delay:1s;
+}
+
+@keyframes anywayanimation3 {
+  0% {
+    opacity:1;
+  }
+  11% {
+    opacity:0.3;
+  }
+  100% {
+    opacity:0.3;
+  }
+}
+.step4.checkview.isinview{
+  animation: anywayanimation4  linear 4s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  transform-origin: 50% 50%;
+    animation-delay:1.5s;
+}
+
+@keyframes anywayanimation4 {
+  0% {
+    opacity:1;
+  }
+  11% {
+    opacity:0.1;
+  }
+  100% {
+    opacity:0.1;
+  }
+}
+
+/*ANimation Ground*/
+.g.checkview.isinview{
+  animation: ganimation linear 2s;
+ animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  transform-origin: 50% 50%;
+   animation-delay:1s;
+}
+
+@keyframes ganimation{
+  0% {
+    transform:  translate(0px,0px)  ;
+  }
+  41% {
+    transform:  translate(-293px,200px)  ;
+  }
+  100% {
+    transform:  translate(-293px,200px)  ;
+  }
+}
+
+
+.r.checkview.isinview{
+  animation: ranimation linear 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  transform-origin: 50% 50%;
+    animation-delay:1s;
+}
+
+@keyframes ranimation{
+  0% {
+    transform:  translate(0px,0px)  ;
+  }
+  39% {
+    transform:  translate(-159px,200px)  ;
+  }
+  100% {
+    transform:  translate(-159px,200px)  ;
+  }
+}
+
+.o.checkview.isinview{
+  animation: oanimation linear 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  transform-origin: 50% 50%;
+    animation-delay:1s;
+}
+
+@keyframes oanimation{
+  0% {
+    transform:  translate(0px,0px)  ;
+  }
+  40% {
+    transform:  translate(-92px,200px)  ;
+  }
+  100% {
+    transform:  translate(-92px,200px)  ;
+  }
+}
+
+.u.checkview.isinview{
+  animation: uanimation linear 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  transform-origin: 50% 50%;
+   animation-delay:1s;
+}
+
+@keyframes uanimation{
+  0% {
+    transform:  translate(0px,0px)  ;
+  }
+  40% {
+    transform:  translate(58px,200px)  ;
+  }
+  100% {
+    transform:  translate(58px,200px)  ;
+  }
+}
+
+
+.n.checkview.isinview{
+  animation: nanimation linear 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  transform-origin: 50% 50%;
+   animation-delay:1s;
+}
+
+@keyframes nanimation{
+  0% {
+    transform:  translate(0px,1px)  ;
+  }
+  40% {
+    transform:  translate(151px,200px)  ;
+  }
+  100% {
+    transform:  translate(151px,200px)  ;
+  }
+}
+.d.checkview.isinview{
+  animation: danimation linear 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  transform-origin: 50% 50%;
+   animation-delay:1s;
+}
+
+@keyframes danimation{
+  0% {
+    transform:  translate(0px,0px)  ;
+  }
+  40% {
+    transform:  translate(245px,200px)  ;
+  }
+  100% {
+    transform:  translate(245px,200px)  ;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
